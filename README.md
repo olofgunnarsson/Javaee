@@ -2,9 +2,10 @@
 Java EE
 
 ##Instructions
-./mvnw install
- docker build -t kits-tomee .
- docker run -it --rm -p 8888:8080 kits-tomee 
+mvn clean install
+docker-compose build
+docker-compose up
  
 ##Test
-curl $docker_ip:8888/javaee-1.0-SNAPSHOT/
+curl -XPOST $docker_ip:8888/javaee-1.0-SNAPSHOT/app/user/tester
+curl $docker_ip:8888/javaee-1.0-SNAPSHOT/app/user/1
