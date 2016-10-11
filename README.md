@@ -1,8 +1,10 @@
-# javaee
-Java EE
+# JavaEE
+
+##Prerequisites
+Install docker: https://www.docker.com/products/overview
 
 ##Instructions
-mvn clean install
+./mvnw clean install
 docker-compose build
 docker-compose up
  
