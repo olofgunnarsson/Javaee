@@ -2,4 +2,4 @@
 Java EE
 
 
-./mwnw install
+./mvnw install
