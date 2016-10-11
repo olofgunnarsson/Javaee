@@ -5,7 +5,7 @@
 
     <persistence-unit name="ds" transaction-type="JTA">
         <jta-data-source>java:jboss/datasources/ExampleMySQLDS</jta-data-source>
-        <class>se.kits.javaee.User</class>
+        <class>se.kits.javaee.entity.User</class>
         <properties>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="create-drop"/>

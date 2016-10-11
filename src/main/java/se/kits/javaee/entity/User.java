@@ -1,4 +1,4 @@
-package se.kits.javaee;
+package se.kits.javaee.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;

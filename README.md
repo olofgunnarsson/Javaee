@@ -1,5 +1,16 @@
 # JavaEE
 
+#About
+Simple rest application that can create and fetch a user.
+
+App introduces
+
+- JPA
+- JAX-RS
+- Entity-boundary-control programming pattern
+- Docker
+- Wildfly
+
 ##Prerequisites
 Install docker: https://www.docker.com/products/overview
 
@@ -9,5 +20,7 @@ Install docker: https://www.docker.com/products/overview
 - docker-compose up
  
 ##Test
-- curl -XPOST $docker_ip:8888/javaee-1.0-SNAPSHOT/app/user/tester
-- curl $docker_ip:8888/javaee-1.0-SNAPSHOT/app/user/1
+When app is running:
+
+- curl -XPOST $docker_ip:8888/javaee-1.0-SNAPSHOT/user/tester
+- curl $docker_ip:8888/javaee-1.0-SNAPSHOT/user/1
