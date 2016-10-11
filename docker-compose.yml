@@ -1,0 +1,20 @@
+version: '2'
+services:
+  db:
+    image: tutum/mysql
+    networks:
+      - default
+    ports:
+      - "3306:3306"
+    volumes:
+      - /dev/urandom:/dev/random
+    environment:
+      MYSQL_PASS: "javaee"
+      ON_CREATE_DB: "javaee"
+
+  javaee:
+    build: .
+    networks:
+      - default
+    ports:
+      - "8888:8080"
